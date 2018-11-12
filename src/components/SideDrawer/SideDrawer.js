@@ -8,7 +8,7 @@ let sideDrawer = (props) => {
   if (props.open) {
     attachedClasses = [classes.sidedrawer, classes.open]
   }
-  console.log(props)
+  // console.log(props)
   return (
       <div>
         <Backdrop show={props.open} clicked={props.closed}/>

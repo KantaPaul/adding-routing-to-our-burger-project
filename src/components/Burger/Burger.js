@@ -5,7 +5,7 @@ import classes from '../../assets/css/style.scss'
 
 
 let burger = (props) => {
-  console.log(props)
+  // console.log(props)
   let transformIngredients = Object.keys(props.ingredients).map(ingredientKey => {
     return [...Array(props.ingredients[ingredientKey])].map((__, i) => {
       return <BurgerIngredient key={ingredientKey + i} type={ingredientKey} />
