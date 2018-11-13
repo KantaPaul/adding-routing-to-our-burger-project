@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {NavLink} from 'react-router-dom'
 import Burger from '../../Burger/Burger';
 
 export default class CheckOutSummary extends Component {
@@ -11,7 +12,7 @@ export default class CheckOutSummary extends Component {
         </div>
         <div className="btn-group">
           <button className="btn btn-danger btn-lg" onClick={this.props.checkoutCancel}>Cancel</button>
-          <button className="btn btn-primary btn-lg" onClick={this.props.checkoutContinue}>Continue</button>
+          <NavLink className="btn btn-primary btn-lg" to="/checkout/contact-data">Continue</NavLink>
         </div>
       </div>
     )

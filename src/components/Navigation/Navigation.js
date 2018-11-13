@@ -9,8 +9,8 @@ let toolBar = (props) => {
         <span className="navbar-toggler-icon" onClick={props.open}></span>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav mr-auto">
-            <NavigationItems link="/" active={true}>Burger Builder</NavigationItems>
-            <NavigationItems link="/">Check Out</NavigationItems>
+            <NavigationItems exact link="/">Burger Builder</NavigationItems>
+            <NavigationItems link="/orders">Orders</NavigationItems>
           </ul>
         </div>
       </nav>
